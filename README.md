@@ -1,246 +1,70 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/8JTk2R9o)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15399621&assignment_repo_type=AssignmentRepo)
-# Graded Challenge 7 - Set 1
-
-_Graded Challenge 7 ini dibuat guna mengevaluasi pembelajaran pada Hacktiv8 Data Science Fulltime Program khususnya pada Phase 2 Week 1._
-
----
-
-## Assignment Objectives
-
-Graded Challenge 7 ini dibuat guna mengevaluasi konsep Computer Vision / Natural Language Processing pada pembelajaran Phase 2 sebagai berikut:
-
-- Mampu memahami konsep Computer Vision/NLP.
-- Mampu mempersiapkan data untuk digunakan dalam model Computer Vision/NLP.
-- Mampu mengimplementasikan Artificial Neural Network dengan data yang dipilih.
-- Mampu menganalisis dan menjelaskan performansi dari arsitektur Artificial Neural Network yang dibuat.
-
----
-
-## Topik
-
-Student dipersilakan memilih topik antara **Computer Vision atau Natural Language Processing** menggunakan dataset sendiri (scraping oleh student) atau menggunakan open dataset.
-
----
-
-## Dataset
-
-### Ketentuan Dataset
-1. Pilihlah dataset yang paling nyaman digunakan karena tidak ada batasan untuk memilih dataset dalam mengerjakan *Graded Challenge 7*. 
-
-2. **Konsultasikan terlebih dahulu dataset yang hendak digunakan ke buddy masing-masing student. Jika disetujui, maka silakan dikerjakan. Jika tidak disetujui, maka cari dataset yang lain dan konsultasikan lagi mengenai dataset yang baru ini.**
-
-3. Student tidak boleh menggunakan dataset yang sudah dipakai dalam sesi pembelajaran saat dikelas bersama instruktur. Carilah dataset yang baru untuk tugas Graded Challenge ini.
-
-4. **Student diizikan untuk melakukan scraping dataset**. Sertakan code mengenai scraping ini ke dalam repository.
-
-5. Dataset tidak perlu diupload ke dalam repository. Sertakan link dataset pada file `url.txt`. Jika melakukan scraping, maka upload dataset ke dalam Google Drive dan share link mengenai dataset pada file `url.txt`. Sertakan juga code mengenai proses scraping yang dilakukan ke dalam repository.
-
-### Data Sources
-
-Student dapat memilih dataset dari salah satu repository dibawah ini. Popular open data repositories :
-
-- [UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php)
-- [Kaggle datasets](https://www.kaggle.com/datasets)
-- [Amazon’s AWS datasets](https://registry.opendata.aws/)
-
-Meta portals :
-
-- [Data Portals](http://dataportals.org/)
-- [OpenDataMonitor](https://opendatamonitor.eu/frontend/web/index.php?r=dashboard%2Findex)
-- [Quandl](https://www.quandl.com/)
-- Sumber lain yang kredibel.
-
----
-
-## Assignment Instructions
-
-*Graded Challenge 7* dikerjakan dalam format *notebook* dan *model deployment* dengan beberapa *kriteria wajib* di bawah ini:
-
-1. Deep Learning framework yang digunakan adalah *TensorFlow*.
-
-2. Ada penggunaan library visualisasi, seperti *matplotlib*, *seaborn*, atau yang lain.
-
-3. Isi *notebook* harus mengikuti *outline* di bawah ini:
-   1. Perkenalan
-      > Bab pengenalan harus diisi dengan identitas, gambaran besar dataset yang digunakan, dan *objective* yang ingin dicapai.
-   
-   2. Import Libraries
-      > *Cell* pertama pada *notebook* **harus berisi dan hanya berisi** semua *library* yang digunakan dalam *project*.
-   
-   3. Data Loading
-      > Bagian ini berisi proses penyiapan data sebelum dilakukan eksplorasi data lebih lanjut. Proses Data Loading dapat berupa memberi nama baru untuk setiap kolom, mengecek ukuran dataset, dll.
-   
-   4. Exploratory Data Analysis (EDA)
-      > Bagian ini berisi explorasi data pada dataset diatas dengan menggunakan query, grouping, visualisasi sederhana, dan lain sebagainya.
-
-   5. Feature Engineering
-      > Bagian ini berisi proses penyiapan data untuk proses pelatihan model, seperti pembagian data menjadi train-val-test, preprocessing, dan proses-proses lain yang dibutuhkan.   
-   
-   6. ANN Training (Sequential API/Functional API)
-      
-      vi.1. Model Definition
-      > Bagian ini berisi cell untuk mendefinisikan model. Jelaskan alasan menggunakan suatu algoritma/model, hyperparameter yang dipakai, jenis penggunaan metrics yang dipakai, dan hal lain yang terkait dengan model.
-
-      vi.2. Model Training
-      > Cell pada bagian ini hanya berisi code untuk melatih model dan output yang dihasilkan. Lakukan beberapa kali proses training dengan hyperparameter yang berbeda untuk melihat hasil yang didapatkan. Analisis dan narasikan hasil ini pada bagian Model Evaluation.
-   
-      vi.3. Model Evaluation
-      > Pada bagian ini, dilakukan evaluasi model yang harus menunjukkan bagaimana performa model berdasarkan metrics yang dipilih. Hal ini harus dibuktikan dengan visualisasi tren performa dan/atau tingkat kesalahan model. **Lakukan analisis secara detail terkait dengan hasil pada model dan tuliskan hasil analisisnya**.
-
-   7. ANN Improvement (Sequential API/Functional API)
-      
-      vii.1. Model Definition
-      > Bagian ini berisi cell untuk mendefinisikan model. Jelaskan alasan menggunakan suatu algoritma/model, hyperparameter yang dipakai, jenis penggunaan metrics yang dipakai, dan hal lain yang terkait dengan model.
-
-      vii.2. Model Training
-      > Cell pada bagian ini hanya berisi code untuk melatih model dan output yang dihasilkan. Lakukan beberapa kali proses training dengan hyperparameter yang berbeda untuk melihat hasil yang didapatkan. Analisis dan narasikan hasil ini pada bagian Model Evaluation.
-   
-      vii.3. Model Evaluation
-      > Pada bagian ini, dilakukan evaluasi model yang harus menunjukkan bagaimana performa model berdasarkan metrics yang dipilih. Hal ini harus dibuktikan dengan visualisasi tren performa dan/atau tingkat kesalahan model. **Lakukan analisis secara detail terkait dengan hasil pada model dan tuliskan hasil analisisnya**.
-   
-   8. Model Saving
-      > Pada bagian ini, dilakukan proses penyimpanan model dan file-file lain yang terkait dengan hasil proses pembuatan model. Pilihlah 1 arsitektur ANN yang terbaik berdasarkan hasil evaluasi sebelumnya. **Nyatakan secara jelas arsitektur mana yang akan dipakai sebagai model terbaik (Sequential API atau Functional API).**
-   
-   9. Model Inference
-      > Model yang sudah dilatih akan dicoba pada data yang bukan termasuk ke dalam train-set, val-set, ataupun test-set. Data ini harus dalam format yang asli, bukan data yang sudah di-scaled. **Model Inference harus berada pada notebook yang berbeda dari notebook yang dipakai untuk pembuatan model.**
-   
-   10. Pengambilan Kesimpulan
-       > Pada bagian terakhir ini, **harus berisi** kesimpulan yang mencerminkan hasil yang didapat dengan *objective* yang sudah ditulis di bagian pengenalan.
-
-4. *Notebook* harus diupload dalam akun GitHub Classroom masing-masing siswa untuk selanjutnya dinilai.
-
----
-
-## Assignment Submission
-
-- Simpan assignment pada sesi ini dengan nama `P2G7_<nama-student>.ipynb`, misal `P2G7_raka_ardhi.ipynb`.
-
-- Anda tidak perlu mengupload dataset dan model ke GitHub, karena dikhawatirkan ukurannya melebihi batas ukuran maksimum file yang diizinkan oleh GitHub.
-
-- Upload model Anda ke Google Drive pribadi dan set permission ke public.
-
-- Push Assigment yang telah Anda buat ke akun Github Classroom Anda masing-masing.
-
-- Untuk Model Deployment :
-  * Buat sebuah folder bernama `deployment` dan masukkan semua file yang berkaitan dengan deployment ke folder ini.
-  * Buat sebuah file bernama `url.txt` yang berisi URL Dataset, URL Model, dan URL deployment.
-  * Contoh bentuk isi repository dengan Model Deployment.
-    ```
-    ├── deployment/
-    │   ├── app.py
-    │   ├── eda.py
-    │   ├── prediction.py
-    │   ├── requirements.txt
-    ├── P2G7_raka_ardhi.ipynb
-    ├── P2G7_raka_ardhi_inference.ipynb
-    ├── url.txt
-    └── README.md
-    ```
-
----
-
-## Assignment Rubrics
-
-### Code Review
-
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| Feature Engineering | Mampu melakukan proses Feature Engineering sebelum melakukan proses modeling. Sertakan narasi mengenai alasan Feature Engineering tersebut dilakukan | 20 pts |
-```
-Penilaian terhadap code Feature Engineering : 10 points
-Penilaian terhadap narasi dan keterhubungannya dengan domain yang dihadapi : 10 points
-```
-
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| ANN Training | Membuat model Artificial Neural Network untuk menyelesaikan masalah Computer Vision atau NLP | 20 pts  |
-| ANN Improvement | Membuat improvisasi model Artificial Neural Network | 20 pts  |
-| Model Inference | Mencoba model yang telah dibuat dengan data baru | 10 pts |
-| Runs Perfectly| Kode berjalan tanpa ada error. Seluruh kode berfungsi dan dibuat dengan benar. | 10 pts |
-
-```
-Catatan mengenai ANN Training : 
-
-1. Narasikan mengenai layer yang Anda buat beserta hyperparameter yang Anda tulis.
-2. Sebaiknya lakukan training dengan lebih dari 20 epochs agar dapat terlihat performa model dengan lebih jelas.
-3. Anda dipersilakan membuat arsitektur model dengan Sequential API/Functional API/keduanya.
-4. Pada bagian ini, buatlah arsitektur ANN Anda sendiri. Anda tidak diperkenankan menggunakan transfer learning pada bagian ANN Training ini.
-
-Catatan mengenai ANN Improvement :
-1. Narasikan mengenai apa yang Anda lakukan untuk memperbaiki performansi dari model-model yang tercipta pada ANN Training.
-2. Sama seperti ANN Training, Anda dipersilakan membuat arsitektur model dengan Sequential API/Functional API/keduanya.
-3. Arsitektur yang dibuat untuk rubric ANN Improvement akan dibandingkan dengan aristektur dari rubric ANN Training dan harus memiliki performansi yang lebih baik.
-4. Contoh definisi performansi yang lebih baik : memiliki nilai accuracy atau metrics lain yang lebih baik, proses training lebih cepat meski nilai accuracy sama, nilai accuracy sama namun ukuran model lebih kecil, dll.
-5. Model yang dipilih sebagai model terbaik haruslah model dari ANN Improvement, tidak boleh berasal dari ANN Training. Model terbaik ini akan digunakan pada Model Inference dan Model Deployment.
-6. Anda diperkenankan menggunakan transfer learning. Ujilah beberapa arsitektur buatan Anda sendiri.
-7. Anda dipersilakan menggunakan TensorFlow Callback.
-```
-
-### Readability
-
-| Criteria | Meet Expectations | Points|
-| --- | --- | --- |
-| Tertata Dengan Baik | Semua baris kode terdokumentasi dengan baik dengan menggunakan Markdown untuk penjelasan kode. | 10 pts |
-
-```
-Kriteria tertata dengan baik diantaranya adalah : 
-
-1. Terdapat section Perkenalan yang jelas
-2. Tidak menyalin markdown dari tugas lain.
-3. Import library rapih (terdapat dalam 1 cell dan tidak ada unused libs).
-4. Pemakaian fungsi markdown yang optimal (Heading, text formating, dll). 
-5. Terdapat komentar pada setiap baris kode.
-6. Adanya pemisah yang jelas antar section, dll.
-7. Tidak adanya typo.
-```
-
-### Analysis
-
-| Criteria | Meet Expectations | Points|
-| --- | --- | --- |
-| Model Analysis | Menganalisa informasi dari model yang telah dibuat | 30 pts |
-| Overall Analysis | Menarik informasi/kesimpulan dari keseluruhan kegiatan yang dilakukan | 20 pts |
-
-```
-Contoh kriteria analisa yang baik diantaranya adalah: 
-
-1. Terdapat penjelasan macam-macam hasil metric evaluasi dan interpretasinya terhadap kasus yang diselesaikan.
-2. Dapat menjelaskan kelemahan/kekurangan dan kelebihan dari model yang dibuat.
-3. Dapat memberikan statement untuk improvement selanjutnya dari model yang dibuat. 
-4. Sebutkan insight yang dapat diambil setelah proses EDA, dll.
-```
-
-### Deployment
-
-| Criteria | Meet Expectations | Points |
-| --- | --- | --- |
-| Model Deployment | Membuat webapps terhadap project yang telah dibuat. | 10 pts |
-
-```
-Catatan mengenai Model Deployment : 
-
-1. Ketiadaan URL deployment ataupun source code deployment di repository, akan tetap diperhitungkan untuk menilai bagian Model Deployment. 
-2. Tidak diperkenankan adanya informasi tambahan/informasi susulan seperti lupa memberikan URL deployment atau lupa mengupload source code via apapun (DM buddy, email, atau yang lain).
-3. Student akan dianggap tidak melakukan Model Deployment jika tidak ada URL deployment dan source code deployment di repository.
-4. Untuk hasil prediksi, ubah kembali menjadi label aslinya sesuai dengan dataset asalnya.
-   - Contoh : saat melakukan modeling, Anda melakukan konversi target seperti 
-     `car` menjadi `2`
-     `bus` menjadi `1`
-     `truck` menjadi `0`
-   - Saat menampilkan hasil prediction, ubahlah label target ke dalam bentuk string (`car`/`bus`/`truck`).
-```
-
----
-
-```
-Total Points : 150
-```
-
----
-
-## Notes
-
-- **Deadline : P2W2D1 pukul 23:59 WIB.**
-
-- **Keterlambatan pengumpulan tugas mengakibatkan skor Graded Challenge 7 menjadi 0.**
+# Cyberbullying Sentiment Analysis
+
+#### -- Project Status: Completed
+
+### Methods Used
+* Natural Language Processing (NLP)
+* Text Vectorization
+* Embedding Layers
+* Bidirectional LSTM (Long Short-Term Memory)
+* Batch Normalization
+* Dropout for Regularization
+* Accuracy as a Metric
+
+### Technologies
+* Python
+* TensorFlow/Keras
+* Scikit-Learn
+* Pandas
+* Numpy
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
+
+## Project Description
+
+This project focuses on sentiment analysis of Twitter data regarding cyberbullying using Natural Language Processing (NLP) algorithms. The objective is to develop a model that classifies the sentiment of tweets related to cyberbullying, achieving at least 70% accuracy.
+
+### Data Source
+The dataset used for this analysis is retrieved from Kaggle: [Cyberbullying Classification Dataset](https://www.kaggle.com/datasets/andrewmvd/cyberbullying-classification/data).
+
+### Objectives
+1. **Develop an NLP Model:** Create a model to classify the sentiment of tweets related to cyberbullying.
+2. **Achieve High Accuracy:** Aim for at least 70% accuracy in sentiment classification.
+3. **Understand Emotional Impact:** Analyze how cyberbullying affects victims and the broader community on Twitter.
+
+### Analysis and Modeling Work
+1. **Data Preparation:**
+   - **Preprocessing:** Clean and prepare data for analysis.
+   - **Feature Engineering:** Transform text into numerical features for modeling.
+   - **Text Vectorization and Embedding:** Convert text to numerical format and enhance word representations.
+
+2. **Model Architecture:**
+   - **Bidirectional LSTM:** Capture context from both past and future directions in text sequences.
+   - **Layers:** The model consists of four hidden layers and an output layer.
+   - **Regularization:** Implemented BatchNormalization and Dropout (0.25) to stabilize outputs and prevent overfitting.
+
+3. **Performance:**
+   - Achieved a training accuracy of 72.38% and validation accuracy of 71.58%.
+   - Training and validation losses are closely aligned, indicating good model fit.
+
+4. **Challenges:**
+   - Addressing false positives and false negatives in sentiment classification.
+   - Continuous tuning required to improve validation accuracy and reduce loss.
+
+### Getting Started
+
+To reproduce or use this analysis, follow these steps:
+1. **Clone the Repository:** `git clone https://github.com/your-repo/cyberbullying-sentiment-analysis.git`
+2. **Install Dependencies:** Use `pip install -r requirements.txt` to install required Python packages.
+3. **Download Data:** Retrieve the dataset from Kaggle and place it in the appropriate directory.
+4. **Run Analysis:** Execute the Jupyter notebook or Python script for data preprocessing, model training, and evaluation.
+5. **Model Training and Evaluation:** Follow the instructions in the notebook to train the model and assess its performance.
+
+### Contact
+
+For any questions or further information, please contact:
+
+- **Name:** [Ardiansyah Putra Mahadika]
+- **Email:** [ardiansyahpm224@gmail.com]
+- **LinkedIn:** [www.linkedin.com/in/ardiansyah-putra-m-17978318b]
