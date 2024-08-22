@@ -1,0 +1,11 @@
+numpy
+pandas
+seaborn
+matplotlib
+tensorflow
+tensorflow-hub
+wordcloud
+emoji
+nltk
+scikit-learn
+pickle5
